@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>yuemingfei</groupId>
-  <artifactId>cache</artifactId>
+  <groupId>org.allen.project</groupId>
+  <artifactId>multidb</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>cache</name>
+  <name>multidb</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -22,45 +22,54 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-dbcp2</artifactId>
+    	<version>2.1.1</version>
+    </dependency>
+    <dependency>
     	<groupId>org.springframework</groupId>
     	<artifactId>spring-context</artifactId>
     	<version>4.2.4.RELEASE</version>
     </dependency>
     <dependency>
-    	<groupId>net.sf.ehcache</groupId>
-    	<artifactId>ehcache</artifactId>
-    	<version>2.10.0</version>
-    	<exclusions>
-    		<exclusion>
-    			<groupId>org.slf4j</groupId>
-    			<artifactId>slf4j-api</artifactId>
-    		</exclusion>
-    	</exclusions>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>5.1.38</version>
     </dependency>
     <dependency>
     	<groupId>org.slf4j</groupId>
     	<artifactId>slf4j-log4j12</artifactId>
-    	<version>1.7.10</version>
+    	<version>1.7.15</version>
     </dependency>
     <dependency>
-    	<groupId>com.google.guava</groupId>
-    	<artifactId>guava</artifactId>
-    	<version>19.0</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.apache.commons</groupId>
-    	<artifactId>commons-lang3</artifactId>
-    	<version>3.4</version>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-tx</artifactId>
+    	<version>4.2.4.RELEASE</version>
     </dependency>
     <dependency>
     	<groupId>org.aspectj</groupId>
     	<artifactId>aspectjweaver</artifactId>
-    	<version>1.8.8</version>
+    	<version>1.8.9</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.atomikos</groupId>
+    	<artifactId>transactions-jdbc</artifactId>
+    	<version>4.0.0</version>
     </dependency>
     <dependency>
     	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context-support</artifactId>
+    	<artifactId>spring-jdbc</artifactId>
     	<version>4.2.4.RELEASE</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.atomikos</groupId>
+    	<artifactId>transactions</artifactId>
+    	<version>4.0.0</version>
+    </dependency>
+    <dependency>
+    	<groupId>javax.transaction</groupId>
+    	<artifactId>jta</artifactId>
+    	<version>1.1</version>
     </dependency>
   </dependencies>
 </project>

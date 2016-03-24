@@ -1,4 +1,4 @@
-package org.allen.cache.spring_cache;
+package org.allen.project.multidb;
 
 /**
  * Hello world!
